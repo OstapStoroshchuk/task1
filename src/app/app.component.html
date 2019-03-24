@@ -1,20 +1,66 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="main">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="backBlue">
+        </div>
+        <div class="whiteFone">
+          <div class="creditCard">
+            <div class="r1">
+              <p style="color: white">Carly Ling</p>
+              <img *ngIf="show" id="logo" src="../assets/visa-logo-png-transparent.png">
+              <img *ngIf="notShow" id="logo1" src="../assets/MasterCard_logo.png">
+              <div *ngIf="elsee" class="strip"></div>
+            </div>
+            <div class="r2">
+              <label for="creditCardNumber">Credit Card Number</label><br>
+              <input class="inputs" id="creditCardNumber" type="text"  oninput="f(this.value)" name="creditCardNumber" maxlength="19"
+                     [(ngModel)]="creditCardNumber"
+                     (keypress)="keyPress($event)"
+                     (ngModelChange)="addSpaces($event)">
+            </div>
+            <div class="r3">
+              <div>
+                <label for="expiration">Expiration</label><br>
+                <input class="inputs" id="expiration" type="date"  required min="2019-03-24">
+              </div>
+              <div class="r3a">
+                <label for="ccv">CCV</label><br>
+                <input class="inputs" id="ccv" type="text" (keypress)="keyPress($event)" minlength="3" maxlength="3">
+              </div>
+            </div>
+
+          </div>
+          <div class="content text-center ">
+            <div class="total">
+              <h6>TOTAL</h6>
+              <b id="totalPrice">$898</b>
+            </div>
+            <div class="det">
+              <h6>DETAIL</h6>
+            </div>
+            <div class="detail text-center ">
+
+              <div class="col1">
+                <p>iPad Pro</p>
+                <p>Apple pencil</p>
+              </div>
+              <div class="col2">
+                <p>$799</p>
+                <p>$99</p>
+              </div>
+            </div>
+            <div class="btn">
+              <input id="button" type="button" name="sub" value="PAY NOW" (click)="checkCards(creditCardNumber)">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
 

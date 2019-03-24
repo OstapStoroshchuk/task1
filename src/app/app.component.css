@@ -1,0 +1,173 @@
+.backBlue {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: 0 0 5px;
+
+  height: 100vh;
+  width: 100vw;
+  background: #0c84fc;
+  -webkit-clip-path: polygon(93% 15%, 100% 15%, 100% 65%, 7% 85%, 0 85%, 0 35%);
+  clip-path: polygon(93% 15%, 100% 15%, 100% 65%, 7% 85%, 0 85%, 0 35%);
+}
+
+
+.whiteFone {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 23%;
+  box-shadow: 0 0 5px #7e7e7e;
+  border-radius: 5px;
+  height: 46%;
+  width: 40%;
+  color: black;
+  background: white;
+}
+
+.content {
+  width: 42%;
+  height: 100%;
+}
+
+#button {
+  border: 1px solid #3578c7;
+  border-radius: 25px;
+  background: white;
+  color: #3578c7;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+}
+
+#button:hover {
+  background: #0c84fc;
+  color: white;
+  margin: 0 5px 0 5px;
+}
+
+h6 {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.total {
+  padding-top: 25%;
+}
+
+#totalPrice {
+  font-size: 28px;
+  color: #1e88f8;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.col1 {
+  text-align: left;
+  width: 70%;
+  color: #57585c;
+}
+
+.col2 {
+  text-align: right;
+  width: 30%;
+  color: #1e88f8;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 25%;
+}
+
+.det {
+  padding-top: 25px;
+}
+
+.creditCard {
+  position: absolute;
+  background: #1d8fff;
+  margin-left: 40%;
+  margin-top: 10%;
+  padding-left: 5%;
+  width: 70%;
+  height: 67%;
+
+  box-shadow: 0 0 40px 0px #919ca2;
+  border-radius: 5px;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+#logo1 {
+  width: 75px;
+  height: 75px;
+}
+
+.r1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 10%;
+
+}
+
+.strip {
+  width: 75px;
+  height: 75px;
+}
+
+.r3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 12px;
+  color: #7ec7ff;
+}
+
+#ccv {
+  width: 30%;
+  text-align: center;
+}
+
+#creditCardNumber {
+  width: 60%;
+  padding-left: 25px;
+}
+
+#expiration {
+  width: 100%;
+}
+
+.inputs {
+  background: #3899f7;
+  border: 0px solid #cccccc;
+  color: #d8ffff;
+}
+
+.r3a {
+  margin-left: 15%;
+}
+
